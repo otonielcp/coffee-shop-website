@@ -1,5 +1,11 @@
 /** @format */
 
+/* Name: Otoniel Cortez
+            file Name: default.html 
+            Course: INFO1311.ww 
+            Instructor: Kuisma
+            Date: 11/14/2021 */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root {
@@ -55,6 +61,7 @@ section {
 	text-transform: uppercase;
 	padding-bottom: 3.5rem;
 	font-size: 4rem;
+	margin-top: 2rem;
 }
 
 .heading span {
@@ -84,7 +91,7 @@ section {
 	justify-content: space-between;
 	padding: 1.5rem 7%;
 	border-bottom: var(--border);
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -96,7 +103,7 @@ section {
 }
 
 .header .navbar ul li {
-	text-style: none;
+	list-style-type: none;
 }
 
 .header .logo img {
@@ -260,9 +267,6 @@ section {
 	flex: 1 1 45rem;
 }
 
-.about .row .image img {
-	width: 100%;
-}
 .about .row .content {
 	flex: 1 1 45rem;
 	padding: 2rem;
@@ -571,7 +575,7 @@ section {
 	padding: 1.5rem;
 }
 
-.footer .credit span {
+.footer .credit span a {
 	color: var(--main-color);
 }
 
@@ -640,4 +644,78 @@ section {
 	html {
 		font-size: 50%;
 	}
+}
+
+/* History page styles starts */
+.history {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 5rem;
+}
+
+.history p {
+	font-size: 1.5rem;
+	line-height: 1.8;
+	color: #ccc;
+	padding: 1rem;
+}
+
+.history img {
+	width: 30%;
+	height: auto;
+}
+
+.history > div {
+	width: 60%;
+	padding: 1rem;
+}
+
+/* contact page styles starts */
+/* .inputBox-preference {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+.inputBox-preference p {
+	margin-bottom: 1rem;
+} */
+
+/* special page styles starts*/
+.menu-specials {
+	color: #fff;
+	list-style-type: none;
+	margin: 1.5rem 0;
+	font-size: 1.5rem;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.flex-container > * {
+	/* width: 50%; */
+}
+
+.sub-heading {
+	color: #fff;
+}
+
+/* return page styles starts */
+.return-page {
+	color: #fff;
+	text-align: center;
+	padding: 2rem 0;
+}
+
+.return-page p {
+	font-size: 1.5rem;
+	line-height: 1.8;
+	color: #ccc;
+	padding: 2rem;
 }
