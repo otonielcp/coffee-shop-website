@@ -122,6 +122,16 @@ section {
 	padding-bottom: 0.5rem;
 }
 
+.header .navbar a:active {
+	color: rgb(3, 88, 42);
+	padding-bottom: 0.5rem;
+	border-bottom: 0.1rem solid rgb(3, 88, 42);
+}
+
+.header .navbar a:visited {
+	color: rgb(197, 197, 197);
+}
+
 .header .icons div {
 	color: #fff;
 	cursor: pointer;
