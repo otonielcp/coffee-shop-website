@@ -51,6 +51,10 @@ body {
 	background: var(--bg);
 }
 
+#wrapper {
+	min-width: 80%;
+}
+
 section {
 	padding: 2rem 7%;
 }
@@ -539,6 +543,12 @@ section {
 	background: var(--black);
 	text-align: center;
 }
+#footer-section {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
 
 .footer .share {
 	padding: 1rem 0;
@@ -604,7 +614,7 @@ section {
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 	#menu-btn {
 		display: inline-block;
 	}
@@ -620,6 +630,19 @@ section {
 
 	.header .navbar.active {
 		right: 0;
+	}
+
+	.history {
+		flex-direction: column;
+	}
+
+	.history img {
+		width: 100%;
+		height: auto;
+	}
+
+	.history div {
+		width: 100%;
 	}
 
 	.header .navbar a {
@@ -672,28 +695,9 @@ section {
 	padding: 1rem;
 }
 
-.history img {
-	width: 30%;
-	height: auto;
-}
-
 .history > div {
-	width: 60%;
 	padding: 1rem;
 }
-
-/* contact page styles starts */
-/* .inputBox-preference {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	color: #fff;
-}
-
-.inputBox-preference p {
-	margin-bottom: 1rem;
-} */
 
 /* special page styles starts*/
 .menu-specials {
@@ -706,10 +710,7 @@ section {
 .flex-container {
 	display: flex;
 	justify-content: space-evenly;
-}
-
-.flex-container > * {
-	/* width: 50%; */
+	margin-top: 10rem;
 }
 
 .sub-heading {
